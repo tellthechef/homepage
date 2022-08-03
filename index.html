@@ -1,0 +1,731 @@
+<!DOCTYPE html><!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+    <head>
+        <!-- Basic Page Needs
+        ================================================== -->
+        <meta charset="utf-8">
+        <title>TellTheChef Food Pre-Ordering System</title>
+        <meta name="description" content="TellTheChef is the UK's market-leading online food and drink pre-order service for the restaurant and hospitality industry, serving party planners, weddings and group bookings.">
+        <meta name="keywords" content="online food pre-order, online food pre order, food pre-order, food pre order, online food pre-order system, online food pre order system, pre-order meals, pre order meals, restaurant pre-order, restaurant pre order, group pre-order meal, restaurant order advance,  meal order advance,  advance food orders, online drink pre-order, collect orders, collect pre orders, collection pre-order, pre-order meal, pre-order food, party bookings, party planner food, wedding food, group bookings, online pre-order" />
+        <!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!-- CSS
+        ================================================== -->
+        <!-- Bootstrap  -->
+        <link type="text/css" rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+        <!-- web font  -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css">
+        <!-- plugin css  -->
+        <link rel="stylesheet" type="text/css" href="/js-plugin/animation-framework/animate.css" />
+        <link rel="stylesheet" type="text/css" href="/js-plugin/magnific-popup/magnific-popup.css" />
+        <link type="text/css" rel="stylesheet" href="/js-plugin/isotope/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/js-plugin/flexslider/flexslider.css" />
+        <link rel="stylesheet" type="text/css" href="/js-plugin/pageSlide/jquery.pageslide.css" />
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+        <script>
+        			window.addEventListener("load", function(){
+        				window.cookieconsent.initialise({
+        					"palette": {
+        						"popup": {
+        							"background": "#000"
+        						},
+        						"button": {
+        							"background": "#f1d600"
+        						}
+        					},
+        					"content": {
+        						"href": "https://s3-eu-west-1.amazonaws.com/ttc-public/privacy-policy.pdf"
+        					}
+        				})
+        });
+        </script>
+        <!-- appear-->
+        <link rel="stylesheet" type="text/css" href="/js-plugin/appear/nekoAnim.css">
+        <!-- Owl carousel-->
+        <link rel="stylesheet" href="/js-plugin/owl.carousel/owl-carousel/owl.carousel.css">
+        <link rel="stylesheet" href="/js-plugin/owl.carousel/owl-carousel/owl.theme.css">
+        <!-- icon fonts -->
+        <link type="text/css" rel="stylesheet" href="/font-icons/custom-icons/css/custom-icons.css">
+        <link type="text/css" rel="stylesheet" href="/font-icons/custom-icons/css/custom-icons-ie7.css">
+        <!-- Custom css -->
+        <link type="text/css" rel="stylesheet" href="/css/layout.css">
+        <link type="text/css" id="colors" rel="stylesheet" href="/css/blue.css">
+        <link type="text/css" id="colors" rel="stylesheet" href="/fontawesome/css/font-awesome.min.css">
+        <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+        <script src="/js/modernizr-2.6.1.min.js"></script>
+
+        <!-- Favicons
+        ================================================== -->
+        <link rel="shortcut icon" href="https://php.tellthechef.com/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="http://dev.tellthechef.com/_themes/_common/_images_gen/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-touch-icon-144x144.png">
+
+        <link rel="dns-prefetch" href="https://api.tellthechef.com">
+        <link rel="dns-prefetch" href="https://app.tellthechef.com">
+        <link rel="dns-prefetch" href="https://php.tellthechef.com">
+
+        <style>
+        @media (max-width: 992px) {
+            nav.navbar a.navbar-brand img {
+                max-width: 150px;
+            }
+
+            section#team .col-sm-4 {
+                margin-bottom: 5px;
+            }
+        }
+        </style>
+    </head>
+
+    <body data-spy="scroll" data-target="#scrollTarget" data-offset="150" class="activateAppearAnimation">
+        <!-- Primary Page Layout
+        ================================================== -->
+        <!-- globalWrapper -->
+        <div id="globalWrapper" class="localscroll">
+            <!-- header -->
+            <header id="mainHeader" class="navbar-fixed-top" role="banner">
+                <div class="container">
+                    <nav class="navbar navbar-default scrollMenu" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                            <a class="navbar-brand" href="/" style="padding:0;"><img src="/ttc_logo.png" alt="TellTheChef"/></a> </div>
+                            <div class="collapse navbar-collapse navbar-ex1-collapse" id="scrollTarget">
+                                <ul class="nav navbar-nav pull-right">
+                                    <li class="active"><a href="#home"><i class="icon-home-outline"></i>Home</a> </li>
+                                    <li><a href="#services"><i class="icon-thumbs-up"></i>Services</a> </li>
+                                    <li><a href="#pricing"><i class="icon-star"></i>Pricing</a> </li>
+                                    <!--<li><a href="#clients"><i class="icon-popup-1"></i>Our Work</a> </li>-->
+                                    <li><a href="#team"><i class="icon-users"></i>Team</a> </li>
+                                    <!--<li><a href="https://www.tellthechef.com/blog/"><i class="fa fa-book"></i>Blog</a> </li>-->
+                                    <li><a href="https://app.tellthechef.com/auth"><i class="icon-lock"></i>Login</a> </li>
+                                </ul>
+                            </div>
+
+                        </nav>
+                    </div>
+                </header>
+                <!-- header -->
+                <!-- content -->
+                <section id="home" data-stellar-background-ratio="0.5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-7 col-sm-6">
+                                <div class="flexslider" id="flexHome">
+                                    <ul class="slides">
+                                        <li>
+                                            <h1>FOOD &amp; Drink Pre-Orders</h1>
+                                            <h2>simple, online and automatic</h2>
+                                        </li>
+                                        <li>
+                                            <h1>Integrated Survey</h1>
+                                            <h2>get private feedback from your guests</h2>
+                                        </li>
+                                        <li>
+                                            <h1>Branded Software</h1>
+                                            <h2>branded interface and bespoke emails</h2>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-sm-6 hidden-xs">
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- call to action -->
+                <section class="color4 slice">
+                        <div class="ctaBox ctaBoxFullwidth">
+                            <div class="container">
+                                <div class="row">
+                                <div class="col-md-8">
+                                    <h1>
+                                        <strong>STOP WORRYING ABOUT PRE-ORDERS...</strong> TellTheChef is the smartest way to manage food and drink pre-orders at your venue.
+                                    </h1>
+                                </div>
+                                <div class="col-md-4">
+                                    <a class="btn btn-lg" title="" href="#pricing" target="blank">
+                                        <i class="icon-flash"></i> Pricing
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- call to action -->
+                <!-- services -->
+
+                <section class="slice color1" id="services" style="background-color: #333;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dm0ucmuNtfw?modestbranding=1&autohide=1&showinfo=0&controls=0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </section>
+
+                <section class="slice color1" id="services">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h1>HOW IT WORKS</h1>
+                                <h2 class="subTitle">here's the clever stuff</h2>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="lead">
+                                    <li style="margin-bottom: 10px;">TellTheChef sends automatic personalised emails from your venue to your customers with links to online menus.</li>
+                                    <li style="margin-bottom: 10px;">You simply log in and add the event details into TellTheChef. The email is sent and that’s your bit done... back to work!</li>
+                                    <li style="margin-bottom: 10px;">The host then receives an email link to set up their event and invite their guests to place their choices online.</li>
+                                    <li style="margin-bottom: 10px;">TellTheChef cleverly gathers orders through email invites, gently nudging guests to pre-order. </li>
+                                    <li style="margin-bottom: 15px;">All events, guests and their pre-orders on one screen with place-cards, prep-lists, and reports at the touch of a button.</li>
+                                    <li style="margin-bottom: 15px;">Branding and content control allows TellTheChef to slip into the background. Your guests won’t even know we're there.</li>
+                                    <li>Say hello to… more customer data, increased GP, lower staff costs, and better service.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </section>
+
+                <div id="paralaxSlice1" data-stellar-background-ratio="0.5">
+                    <div class="maskParent">
+                        <div class="paralaxMask"></div>
+                        <div class="paralaxText container">
+                            <i class="icon-megaphone "></i>
+                            <blockquote class="bigTitle">WE MAKE PRE-ORDERS EASY AND<br/>CREATE A DIRECT LINK WITH EVERY GUEST<br/>... A SIMPLE INNOVATION THAT<br/>SOLVES A BIG PROBLEM<br/><small style="font-weight: bold;">Luke Johnson, CHAIRMAN, TELLTHECHEF</small></blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="slice">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="row boxFeature">
+                                    <div class="col-xs-3">
+                                        <i class="icon-th-list-outline iconBig"></i>
+                                    </div>
+                                    <div class="col-xs-9">
+                                        <h2>THE EVENT ORGANISER HAS AN EASIER LIFE</h2>
+                                        <p>... and is more likely to re-book.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="row boxFeature">
+                                    <div class="col-xs-3">
+                                        <i class="icon-chart-pie-outline iconBig"></i>
+                                    </div>
+                                    <div class="col-xs-9">
+                                        <h2>CHEFS KNOW PRECISE ORDERS</h2>
+                                        <p>... and have less paperwork</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="row boxFeature">
+                                    <div class="col-xs-3">
+                                        <i class="icon-users-outline iconBig"></i>
+                                    </div>
+                                    <div class="col-xs-9">
+                                        <h2>GUESTS DON'T FORGET THEIR CHOICES</h2>
+                                        <p>... and are not disturbed by waiting staff.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="row boxFeature">
+                                    <div class="col-xs-3">
+                                        <i class="icon-chart-outline iconBig"></i>
+                                    </div>
+                                    <div class="col-xs-9">
+                                        <h2>THE BUSINESS HAS LESS WASTAGE</h2>
+                                        <p>... and more marketing opportunities.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- services -->
+
+
+                <div id="paralaxSlice2" data-stellar-background-ratio="0.5">
+                    <div class="maskParent">
+                        <div class="paralaxMask"></div>
+                        <div class="paralaxText container">
+                            <blockquote class="bigTitle">TELLTHECHEF SAVES MONEY AND ALLOWS THE HOTEL TO OFFER A BETTER STANDARD OF SERVICE.<br/><small style="font-weight: bold;">PAUL WATSON - MALMAISON</small></blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="slice">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h1>BY RESTAURATEURS FOR RESTAURATEURS</h1>
+                                <h2 class="subTitle">We've developed TellTheChef from years working in the hospitality industry...</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <article class="col-sm-4">
+
+                                <section class="imgWrapper">
+                                    <img src="/img/colourpicker.jpg" class="img-responsive" alt="Ashleye template image news" />
+                                </section>
+                                <section class="newsText color4">
+                                    <h2>WE MAKE YOU LOOK GREAT</h2>
+                                    <p>Sitting quietly in the background, powering your pre-order system, TellTheChef is never one to steal the lime-light.
+                                        <br/>
+                                        You’re in control of the branding, style and content of your system and communications. Logos, images, emails and backgrounds can be changed at the click of a button.</p>
+                                </section>
+
+                            </article>
+
+
+                            <article class="col-sm-4">
+                                <section class="imgWrapper">
+                                    <img src="/img/mobile.jpeg" class="img-responsive" alt="snowflake template image news" />
+                                </section>
+                                <section class="newsText color4">
+                                    <h2>PHONE, TABLET OR DESKTOP.</h2>
+                                    <p>Our fully responsive technology puts you and your guests in control on any web enabled device.
+                                        <br/>
+                                        No more zooming and pinching or turning your tablet to get the best view. Mobile optimisation allows guests to order and the venue to check reports on the go.</p>
+                                </section>
+                            </article>
+
+
+                            <article class="col-sm-4">
+                                <section class="imgWrapper">
+                                    <img src="/img/4star.jpg" class="img-responsive" alt="snowflake template image news" />
+                                </section>
+                                <section class="newsText color4">
+                                    <h2>HOW WAS IT FOR YOU?</h2>
+                                    <p>Our revolutionary closed loop feedback system invites your guests to review and rate their experience.
+                                        <br/>
+                                        TellTheChef collects dish by dish reviews from every guest and feedback on value for money, service and atmosphere, giving live analysis on business performance</p>
+                                </section>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <div id="paralaxSlice3" data-stellar-background-ratio="0.5">
+                    <div class="maskParent">
+                        <div class="paralaxMask"></div>
+                        <div class="paralaxText container">
+                            <blockquote class="bigTitle">WE ALL HAD A FAB TIME LAST NIGHT. THE PRE-ORDER SYSTEM MADE MY JOB A LOT EASIER, SO THANK YOU AGAIN.<br/><small style="font-weight: bold;">OFFICE MANAGER, OXFORD</small></blockquote>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="pricing slice color1" id="pricing">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h1 class="noSubtitle">Plans</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6">
+                                <div class="pricingBloc">
+                                    <h2 style="color: white !important;">SOLO</h2>
+                                    <h3>£9.95 <span>Per Month Plus 20p Per Cover</span><span>Annual Contract</span></h3>
+                                    <ul>
+                                        <li><strong>Optional Full Payments</strong><br/>3% Plus Stripe Fee</li>
+                                        <li><strong>Features</strong><br/>Full Branding 1 User<br/>*Exceptions are no Linking of Business Units</li>
+                                        <li><strong>Reports</strong><br/>Basic Level in Meals e.g. Chef, Front House, Function Sheet & Grouped</li>
+                                        <li><strong>Support</strong><br/>Online Only</li>
+                                        <li><strong>Training</strong><br/>Access to Shared Sessions. Available on Request at £59.00</li>
+                                        <li><strong>Additonal Services</strong><br/>Extra users £2 Per Month<br/>Place Cards List Price</li>
+                                    </ul>
+                                    <p class="sign">
+                                        <a class="btn" href="https://app.tellthechef.com/auth">Sign up</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="pricingBloc focusPlan">
+                                    <h2>TEAM</h2>
+                                    <h3>£79.00 <span>Per Month</span><span>Annual Contract</span></h3>
+                                    <ul>
+                                        <li><strong>Optional Full Payments</strong><br/>2% Plus Stripe Fee</li>
+                                        <li><strong>Features</strong><br/>Full Branding up to 10 Users with Tier Based Access</li>
+                                        <li><strong>Reports</strong><br/>All reports *Exceptions are Table & Seating Plans</li>
+                                        <li><strong>Support</strong><br/>Dedicated Account Manager & Online Support</li>
+                                        <li><strong>Training</strong><br/>Online Group Training £59.00. Onsite £450</li>
+                                        <li><strong>Additonal Services</strong><br/>Extra Users £2 Per Month<br/>Place cards 10% discount</li>
+                                    </ul>
+                                    <p class="sign">
+                                        <a class="btn btn-large" href="https://app.tellthechef.com/auth">
+                                            Sign up
+                                        </a>
+                                        <br/><br/>
+                                        …with your first month free<br/>to get you started
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="pricingBloc">
+                                    <h2 style="color: white !important;">GLOBAL</h2>
+                                    <h3>£149.00 <span>Per Month</span><span>Annual Contract</span></h3>
+                                    <ul>
+                                      <li><strong>Optional Full Payments</strong><br/>1% Plus Stripe Fee</li>
+                                      <li><strong>Features</strong><br/>Full Branding Unlimited Users</li>
+                                      <li><strong>Reports</strong><br/>All Reports Including Table & Seating Plans</li>
+                                      <li><strong>Support</strong><br/>Dedicated Account Manager & Online Support </li>
+                                      <li><strong>Training</strong><br/>Online Group Training £89.00. Onsite £450</li>
+                                      <li><strong>Additonal Services</strong><br/>*Unlimited Users Inclusive<br/>Place Cards 25% Discount</li>
+                                    </ul>
+                                    <p class="sign">
+                                      <a class="btn btn-large" href="https://app.tellthechef.com/auth">
+                                          Sign up
+                                      </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--
+                <section class="slice" id="clients">
+                    <div class="container clearfix">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h1>Our Work</h1>
+                                <h2 class="subTitle">Some of our new best friends and flavours of the month</h2>
+                            </div>
+                            <nav id="filter" class="col-md-12 text-center">
+                                <ul>
+                                    <li><a href="" class="current btn btn-sm" data-filter="*">All</a></li>
+                                    <li><a href=""  class="btn btn-sm" data-filter=".restaurants">Restaurants &amp; Hotels</a></li>
+                                    <li><a href=""  class="btn btn-sm" data-filter=".events">Events &amp; Venues</a></li>
+                                    <li ><a href="" class="btn btn-sm" data-filter=".partners">Partners</a></li>
+                                </ul>
+                            </nav>
+
+                            <div class="portfolio-items  isotopeWrapper clearfix imgHover" id="3">
+                                <article class="col-sm-4 isotopeItem events">
+                                    <section class="imgWrapper">
+                                        <center><img alt="" src="/images/portfolio/roh.jpg" class="img-responsive"></center>
+                                    </section>
+
+                                    <section class="boxContent">
+                                        <h3>Royal Opera House</h3>
+                                        <p>
+
+                                        </p>
+                                    </section>
+                                </article>
+
+                                <article class="col-sm-4 isotopeItem partners">
+                                    <section class="imgWrapper">
+                                        <img alt="" src="/images/portfolio/resdiary.jpg" class="img-responsive">
+                                    </section>
+                                    <section class="boxContent">
+                                        <h3>ResDiary</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate nunc ut tellus sollicitudin placerat. <br>
+                                            <a href="/portfolio-project-fullwidth-video.html" class="moreLink portfolioSheet">&rarr; read more</a>
+                                        </p>
+                                    </section>
+                                </article>
+
+                                <article class="col-sm-4 isotopeItem restaurants">
+                                    <section class="imgWrapper">
+                                        <img alt="" src="/images/portfolio/allstar.jpg" class="img-responsive">
+                                    </section>
+                                    <section class="boxContent">
+                                        <h3>All Star Lanes</h3>
+                                        <p>Once-upon-a-dual-carriageway there was only bowling.<br>
+Sticky carpets, crappy hot dogs, warm beer.<br>
+It pretty much sucked.<br>
+<br>
+Now bowling is here.<br>
+It’s foo-ooo-oood, fine cocktails, crisp beer, good people.<br>
+And oh yeah, bowling.
+                                        </p>
+                                    </section>
+                                </article>
+
+                                <article class="col-sm-4 isotopeItem restaurants">
+                                    <section class="imgWrapper">
+                                        <img alt="" src="/images/portfolio/jf.png" class="img-responsive">
+                                    </section>
+                                    <section class="boxContent">
+                                        <h3>The Jam Factory</h3>
+                                        <p> "We've always collected pre-orders for group meal bookings in order to aid the chef, speed up service and maximise covers. Online meal pre-ordering has allowed us to take more bookings, minimise wastage and reduce repetitive labour-intensive tasks like collecting advance food orders, writing out name cards and reassuring the chef that it'll be alright on the night!"<br><br>
+
+                                            <b>Callum Rumble, Manager at the Jam Factory</b>
+                                        </p>
+                                    </section>
+                                </article>
+                                <article class="col-sm-4 isotopeItem restaurants">
+                                    <section class="imgWrapper">
+                                        <img alt="" src="/images/portfolio/toast.png" class="img-responsive">
+                                    </section>
+                                    <section class="boxContent">
+                                        <h3>Toast</h3>
+                                        <p> “I’ve procured many off the shelf and bespoke software packages before, including ePOS, CRM and other management tools and Tell the Chef is one of the most impressive solutions I have seen” adds Kneale. “From the start it was simple to set up and intuitive. The few queries I had were dealt with immediately, and a small customisation to make it work better for us was also introduced.
+                                            <br><br>
+“It’s a system developed by a restaurateur for restaurateurs and I can’t recommend it highly enough.”
+<br><br>
+<b>Paul Kneale is a business operations &amp; IT consultant for Toast, and a number of other venues in the Blackpool area</b>
+                                        </p>
+                                    </section>
+                                </article>
+
+                                <article class="col-sm-4 isotopeItem restaurants">
+                                    <section class="imgWrapper">
+                                        <img alt="" src="/images/portfolio/malmaison.jpg" class="img-responsive">
+                                    </section>
+                                    <section class="boxContent">
+                                        <h3>Malmaison</h3>
+                                        <p> “The level of support from TellTheChef has always been very good, but the questions we’ve had to ask have been minimal, because it’s an easy, self-explanatory system and having the portal on the web makes it easy to train people and use it across the business. Easy to put in place, simple to use, it improves operations and saves costs - I would recommend TellTheChef to any business handling group orders at any time of year.” <br> <br><b>Paul Watson. General Manager, Malmaison Oxford</b>
+
+                                        </p>
+                                    </section>
+                                </article>
+
+
+                                <article class="col-sm-4 isotopeItem events">
+                                    <section class="imgWrapper">
+                                        <img alt="" src="/images/portfolio/cabaret.jpg" class="img-responsive">
+                                    </section>
+                                    <section class="boxContent">
+                                        <h3>Proud Cabaret</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate nunc ut tellus sollicitudin placerat.<br>
+                                            <a href="/portfolio-project-fullwidth-image.html" class="moreLink portfolioSheet">&rarr; read more</a>
+                                        </p>
+                                    </section>
+                                </article>
+                                <article class="col-sm-4 isotopeItem events">
+                                    <section class="imgWrapper">
+                                        <img alt="" src="/images/portfolio/cotswold.jpg" class="img-responsive">
+                                    </section>
+                                    <section class="boxContent">
+                                        <h3>Cotswold Lodge Hotel</h3>
+                                        <p>Weddings, conferences, parties and events venues use TTC to get busy with the fizzy.<br>
+                                            <a href="/portfolio-project-fullwidth-image.html" class="moreLink portfolioSheet">&rarr; read more</a>
+                                        </p>
+                                    </section>
+                                </article>
+                                <article class="col-sm-4 isotopeItem partners">
+                                    <section class="imgWrapper">
+                                        <img alt="" src="/images/portfolio/API.jpg" class="img-responsive">
+                                    </section>
+                                    <section class="boxContent">
+                                        <h3>API</h3>
+                                        <p>We have an API
+                                        </p>
+                                    </section>
+                                </article>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div id="paralaxSlice3" data-stellar-background-ratio="0.5">
+                        <div class="maskParent">
+                            <div class="paralaxMask"></div>
+                            <div class="paralaxText">
+                                <i class="icon-star iconBig"></i>
+                                <blockquote class="mt15">Write drunk; edit sober.<br/><small>ERNEST HEMINGWAY </small></blockquote>
+                            </div>
+                        </div>
+                    </div>-->
+                    <section class="slice" id="team">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h1>Meet our team</h1>
+                                </div>
+                                <div class="col-sm-4 col-md-2 col-md-offset-1">
+                                    <article>
+                                        <div><img src="/images/team/6.jpg" alt="" class="img-responsive"></div>
+                                        <div class="boxContent color4">
+                                            <h3 style="text-align:center;">LUKE JOHNSON</h3>
+                                            <p style="text-align:center;">Chairman</p>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-sm-4 col-md-2">
+                                    <article>
+                                        <div><img src="/images/team/1.jpg" alt="" class="img-responsive"></div>
+                                        <div class="boxContent color4">
+                                            <h3 style="text-align:center;">ANDREW NORTON</h3>
+                                            <p style="text-align:center;">Chief Executive Officer</p>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-sm-4 col-md-2">
+                                    <article>
+                                        <div><img src="/images/team/3.jpg" alt="" class="img-responsive"></div>
+                                        <div class="boxContent color4">
+                                            <h3 style="text-align:center;">LUKE IRELAND</h3>
+                                            <p style="text-align:center;">Chief Technical Officer</p>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-sm-4 col-md-2">
+                                    <article>
+                                        <div><img src="/images/team/4.jpg" alt="" class="img-responsive"></div>
+                                        <div class="boxContent color4">
+                                            </ul>
+                                            <h3 style="text-align:center;">ANDREA BREWER</h3>
+                                            <p style="text-align:center;">Sales and Marketing</p>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-sm-4 col-md-2">
+                                    <article>
+                                        <div><img src="/images/team/2.jpg" alt="" class="img-responsive"></div>
+                                        <div class="boxContent color4">
+                                            <h3 style="text-align:center;">MATEJ KRAMNY</h3>
+                                            <p style="text-align:center;">Lead Developer</p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- was commented out -->
+
+                    <div id="paralaxSlice4" data-stellar-background-ratio="0.5" >
+                        <div class="maskParent">
+                            <div class="paralaxMask"></div>
+
+                            <div class="paralaxText">
+                                <blockquote>IT’S A SYSTEM DEVELOPED BY A RESTAURATEUR FOR RESTAURATEURS AND I CAN’T RECOMMEND IT HIGHLY ENOUGH.<br/><small style="font-weight: bold;">PAUL KNEALE - TOAST, BLACKPOOL</small></blockquote>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- content -->
+                    <!-- footer -->
+                    <footer>
+                        <section id="mainFooter">
+                            <div class="container" id="footer">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="footerWidget">
+                                            <p><a href="http://www.tellthechef.com" title="">TellTheChef</a> is perfect for your pre-order needs. Simple, reliable and fully automated software to work smart for your business.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <div class="footerWidget">
+
+                                            <h3>TellTheChef.com LTD</h3>
+                                            <address>
+                                                <p> <i class="icon-location"></i>&nbsp;27 Park End Street.,<br/>
+                                                    <i class="icon-location" style="visibility:hidden;"></i>&nbsp;Oxford<br/>
+                                                    <i class="icon-location" style="visibility:hidden;"></i>&nbsp;OX1 1HU<br>
+                                                    <br/>
+                                                    <i class="icon-phone"></i>&nbsp;+44 (0) 2071 111 233 <br><br/>
+                                                    <i class="icon-mail"></i>&nbsp;<a href="mailto:support@tellthechef.com">support@tellthechef.com</a> </p>
+                                                </address>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </footer>
+                        <section  id="footerRights">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <p>Copyright © 2014 <a href="https://www.tellthechef.com">TellTheChef</a> / All rights reserved.<br/>TellTheChef Video made by <a href="http://www.bouncevideo.co.uk" target="_blank">Bounce Video</a></p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <ul class="socialNetwork pull-right">
+                                            <li><a target="_blank" href="https://facebook.com/tellthechef" class="tips" title="TellTheChef on Facebook"><i class="icon-facebook-1 iconRounded"></i></a></li>
+                                            <li><a target="_blank" href="https://twitter.com/tellthechef_com" class="tips" title="TellTheChef on Twitter" target="_blank"><i class="icon-twitter-bird iconRounded"></i></a></li>
+                                            <li><a target="_blank" href="https://plus.google.com/112021943847109026381" class="tips" title="TellTheChef on Google+"><i class="icon-gplus-1 iconRounded"></i></a></li>
+                                            <li><a target="_blank" href="https://www.linkedin.com/company/tellthechef" class="tips" title="TellTheChef on Linkedin"><i class="icon-linkedin-1 iconRounded"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- End footer -->
+                    </div>
+                    <!-- global wrapper -->
+        <!-- End Document
+        ================================================== -->
+        <script type="text/javascript" src="/js-plugin/respond/respond.min.js"></script>
+        <script type="text/javascript" src="/js-plugin/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript" src="/js-plugin/jquery-ui/jquery-ui-1.8.23.custom.min.js"></script>
+        <!-- third party plugins  -->
+        <script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
+        <script type="text/javascript" src="/js-plugin/easing/jquery.easing.1.3.js"></script>
+
+        <script type="text/javascript" src="/js-plugin/flexslider/jquery.flexslider-min.js"></script>
+
+        <script type="text/javascript" src="/js-plugin/isotope/jquery.isotope.min.js"></script>
+        <script type="text/javascript" src="/js-plugin/neko-contact-ajax-plugin/js/jquery.form.js"></script>
+        <script type="text/javascript" src="/js-plugin/neko-contact-ajax-plugin/js/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="/js-plugin/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <script type="text/javascript" src="/js-plugin/parallax/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+        <script type="text/javascript" src="/js-plugin/parallax/js/jquery.localscroll-1.2.7-min.js"></script>
+        <script type="text/javascript" src="/js-plugin/parallax/js/jquery.stellar.min.js"></script>
+        <!-- <script type="text/javascript" src="/js-plugin/smoothscroll/SmoothScroll.js"></script> -->
+        <script type="text/javascript" src="/js-plugin/pageSlide/jquery.pageslide-custom.js"></script>
+        <script type="text/javascript" src="/js-plugin/jquery.sharrre-1.3.4/jquery.sharrre-1.3.4.min.js"></script>
+        <!-- appear -->
+        <script type="text/javascript" src="/js-plugin/appear/jquery.appear.js"></script>
+        <script type="text/javascript" src="/js-plugin/pageSlide/jquery.pageslide-custom.js"></script>
+        <script type="text/javascript" src="/js-plugin/jquery.sharrre-1.3.4/jquery.sharrre-1.3.4.min.js"></script>
+
+
+        <script type="text/javascript" src="/js-plugin/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
+
+
+        <!-- Custom  -->
+        <script type="text/javascript" src="/js/custom.js"></script>
+
+        <script>
+            !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+            arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+            d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+            insertBefore(d,q)}(window,document,'script','_gs');
+
+            _gs('GSN-291340-N');
+        </script>
+        <!-- TTC Probing -->
+        <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="//probe.tellthechef.tech/";
+            _paq.push(['setTrackerUrl', u+'pi.php']);
+            _paq.push(['setSiteId', 4]);
+            _paq.push(['enableHeartBeatTimer']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'pi.js'; s.parentNode.insertBefore(g,s);
+        })();
+        </script>
+        <noscript><p><img src="//probe.tellthechef.tech/pi.php?idsite=4" style="border:0;" alt="" /></p></noscript>
+        <!-- End TTC Probe -->
+    </body>
+    </html>
